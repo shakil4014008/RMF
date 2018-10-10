@@ -1,8 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+<div class="item active">
+    <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+    <div class="carousel-caption" role="option">
+        <p>
 
-<div>
+            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                Learn More
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class=" modal fade" tabindex="-1" id="loginModal" data-keyboard="false" data-backdrop="static">
+
     <style>
         img {
             display: block;
@@ -17,12 +26,13 @@
 
 
     <div class="modal-dialog modal-sm">
-        <div class="modal-content" id="divLogin">
+        <div class="modal-content">
             <div class="modal-header">
-                 <h4 class="modal-title" id="titleLogin">LOG IN TO YOUR ACCOUNT</h4>
+                <button type="button" class=" close" data-dismiss="modal">&times;</button>
+                <h4 class=" modal-title">LOG IN TO YOUR ACCOUNT</h4>
             </div>
             <div class="modal-body">
-                <form id="formlogin">
+                <form>
                     <div class="form-group">
                         <label for="inputUserName">UserName</label>
                         <input class="form-control" placeholder="Login Username" type="text" id="inputUserName" />
@@ -34,8 +44,9 @@
                 </form>
             </div>
 
-            <div class="modal-footer" id="divLoginEnd">
-                <button id="btnLogin" type="submit" class=" btn btn-primary btn-danger">Login</button><br>
+            <div class="modal-footer">
+                <button type="submit" class=" btn btn-primary">Login</button>
+                <button type="button" class=" btn btn-primary" data-dismiss="modal">Close</button><br><br>
                 <a href="http://www.yahoo.com">- Sign Up For A Free Account</a><br>
                 <a href="http://www.yahoo.com">- Forgot Password</a>
 
@@ -45,6 +56,3 @@
         </div>
     </div>
 </div>
-
-
-
